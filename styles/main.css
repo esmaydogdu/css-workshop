@@ -1,0 +1,72 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 32px;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header .logo-container a {
+  display: inline-block;
+}
+
+.header .logo-container a img {
+  max-width: 120px;
+}
+
+.header .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .social-links a:not(:last-child) {
+  padding-right: 24px;
+}
+
+.header .social-links a img {
+  max-width: 20px;
+  height: auto;
+}
+
+.navigation-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation-menu ul li.nav-item a ul {
+  opacity: 0;
+  visibility: hidden;
+}
+/*# sourceMappingURL=main.css.map */
