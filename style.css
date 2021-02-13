@@ -283,3 +283,75 @@ product-item img {
   margin-top: 15px;
 }
 /*product-end*/
+
+/*footer-start*/
+.footer {
+  margin-top: 149px;
+  display: flex;
+  justify-content: center;
+}
+.footer-item {
+  margin-top: 28px;
+  margin-right: 47px;
+}
+
+.adress > h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 8px;
+  color: #263238;
+}
+.adress > img {
+  margin-bottom: 10px;
+}
+.adress > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 149.19%;
+  margin-bottom: 11px;
+  color: #263238;
+}
+
+.content > h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: #263238;
+}
+.content {
+  margin-bottom: 13px;
+}
+.content > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 149.19%;
+  margin-top: 5px;
+  color: #263238;
+}
+
+.brand {
+  /* display: flex;
+  order: ; */
+}
+.brand img {
+}
+
+/* .footer:after {
+  content: "";
+  width: 100%;
+  margin-top: 50px;
+  background-color: #ee4248;
+  height: 64px;
+} */
+
+/*footer-end*/
