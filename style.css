@@ -166,3 +166,43 @@ body {
 }
 
 /*banner-end*/
+
+/*section-start*/
+.section {
+  margin-top: 87px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 63px;
+}
+.section-img {
+  margin-top: 80px;
+  margin-left: 193px;
+  margin-right: 82px;
+}
+.section-text {
+  margin-top: 57px;
+}
+.section-text h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 133.69%;
+  margin-top: 57px;
+
+  color: #1f2e35;
+}
+.section-text span {
+  color: #ee4248;
+}
+.section-text p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 24px;
+
+  color: #30444e;
+}
+/*section-start*/
