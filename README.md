@@ -1,6 +1,6 @@
 # FİGMA HTML - CSS
 
-### Hedef : Flexbox kullanarak sayfadaki tasarımı HTML , CSS sayfa oluşturmak. Birlikte düşünerek bilgi paylaşmak.
+### Gerçek bir Figma tasarımını hep birlikte kod'a aktariyoruz. HTML , CSS sayfa oluşturmak.
 
 ## Kaynak
 
@@ -12,7 +12,7 @@
 
 ---
 
-## Github
+## Contributors
 
 - [Esma Aydogdu ](https://github.com/esmaydogdu)
 
@@ -22,25 +22,15 @@
 
 ## Ders Akışı
 
-- Sayfa basit şekilde düşünülerek tasarım aynısı yapı kod geçirelecek.
+- Plain CSS ile Figma tasarımı responsive olarak dökeceğiz.
 
-- Parça olarak her kısım yapılacak
+- Refactör aşamasında SCSS gibi CSS supersetleri kullanarak folder structure
+  oluşturacağız.
 
-- Tarayıcılara göre kod yapısı düzeltilecek
-
-- Yazılan CSS kodları SCSS geçirilerek daha temiz bir mimari yapısını birlikte deneyimlerek çözümleyeğiz.
-
-- CSS Klasör yapısına uygun şekilde kodlar parçalayarak uygun yapıya geçilecek.
-
-- Responsive uygun yapılarak bütün cihazlar uygun bir arayüz oluşturulacak.
+- Ve bunu hep birlikte yapmak istiyoruz.
 
 ---
 
-## 1. Gün
+## 14 Şubat
 
-- Tasarımın sayfa kodlanırken nasıl düşünme yöntemi kullanabiliriz.
-- İlk dosyalar nasıl oluşturulur.
-
-- Neden sayfayı reset css gibi yardımcı css kullanıyoruz.
-
-* Logo Menu iconları oluşturmak hedefimizde var.
+- Tasarımın Header kısmını kod'a dökmek.
