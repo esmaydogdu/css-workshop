@@ -1,15 +1,36 @@
---tek index.html & style.css---
+# FİGMA HTML - CSS
 
-\*font ekleme
+### Gerçek bir Figma tasarımını hep birlikte kod'a aktariyoruz. HTML , CSS sayfa oluşturmak.
 
-0. reset css css yazmaya başlarken hep yazdıgımız şeyler neden var?
-1. header tasarlanacak
-2. header refactor edilecek
-   farklı browser destekleri
-3. diğer componentlere geçiş
+## Kaynak
 
----scss geçiş---
+---
 
----css folder structure----
+[Arayüz Tasarimi ](https://www.figma.com/community/file/926751902178790221)
 
----responsive----
+[Github](https://github.com/ograsyilmaz/css-workshop)
+
+---
+
+## Contributors
+
+- [Esma Aydogdu ](https://github.com/esmaydogdu)
+
+- [Yılmaz Oğraş ](https://github.com/ograsyilmaz)
+
+---
+
+## Ders Akışı
+
+- Plain CSS ile Figma tasarımı responsive olarak dökeceğiz.
+
+- Refactör aşamasında SCSS gibi CSS supersetleri kullanarak folder structure
+  oluşturacağız.
+
+- Ve bunu hep birlikte yapmak istiyoruz.
+
+---
+
+## 14 Şubat
+
+- Tasarımın Header kısmını kod'a dökmek.
