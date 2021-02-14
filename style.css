@@ -19,6 +19,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
   padding: 0 32px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
@@ -31,10 +34,6 @@ body {
   max-width: 120px;
 }
 
-.header .social-links {
-  display: flex;
-}
-
 .header .social-links a:not(:last-child) {
   padding-right: 24px;
 }
@@ -44,6 +43,10 @@ body {
   height: auto;
 }
 /*navigation-start*/
+.navigation-menu {
+  display: flex;
+  align-self: stretch;
+}
 .navigation-menu a {
   color: #1f2e35;
   text-decoration: none;
@@ -52,16 +55,13 @@ body {
   display: flex;
   list-style: none;
 }
-.navigation-menu > ul {
-  display: flex;
-  list-style: none;
-}
+
 .navigation-menu > ul > li {
   padding: 0 25px;
   display: flex;
   align-items: center;
 }
-.navigation-menu > ul > li.dropdown:after {
+.navigation-menu > ul > li.has-submenu > a:after {
   display: flex;
   content: "";
   margin-left: 8px;
@@ -72,30 +72,104 @@ body {
   background-size: contain;
 }
 .navigation-menu > ul > li > a {
+  display: flex;
+  align-items: center;
   font-size: 18px;
   transition: 0.2s all;
 }
 .navigation-menu > ul > li {
   position: relative;
 }
-.navigation-menu > ul > li > a:hover {
-  color: rgba(31, 46, 53, 0.8);
-}
 
 .navigation-menu > ul > li.nav-item > ul {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
   transition: 0.3s all ease;
 }
-.navigation-menu > ul > li:hover > ul {
-  display: flex;
-  position: absolute;
-  opacity: 100%;
-  visibility: visible;
-}
+
 .navigation-menu > ul > li.nav-item > ul > li > a {
+  display: flex;
   font-size: 16px;
 }
 
 /*navigation-end*/
+.main-content {
+  margin: 1600px 0;
+}
+@media (max-width: 991px) {
+  .social-links {
+    display: none;
+  }
+  .navigation-menu {
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    top: 100%;
+    right: -300px;
+    background: #851b1a;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+    padding: 10px;
+    transition: 0.2s all;
+  }
+  .navigation-menu.show {
+    display: flex;
+    right: 0;
+  }
+  .navigation-menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navigation-menu ul li {
+    padding: 8px 16px;
+  }
+  .navigation-menu ul li a {
+    color: #fff;
+  }
+  .navigation-menu ul li.has-submenu.show {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navigation-menu ul li.has-submenu > ul {
+    display: none;
+  }
+  .navigation-menu ul li.has-submenu.show > ul {
+    display: flex;
+  }
+
+  .navigation-menu ul li.has-submenu > a::after {
+    background-image: url(./assets/icons/chevron_down_white.svg);
+  }
+}
+@media (min-width: 992px) {
+  .navigation-menu > ul > li > a:hover {
+    color: rgba(31, 46, 53, 0.8);
+  }
+  .navigation-menu > ul > li > ul {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all;
+    display: flex;
+    position: absolute;
+
+    top: 100%;
+    flex-direction: column;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+    min-width: 100%;
+    background: #f7ba4440;
+  }
+  .navigation-menu > ul > li > ul > li {
+    padding: 8px;
+  }
+  .navigation-menu > ul > li:hover > ul {
+    display: flex;
+    position: absolute;
+    opacity: 100%;
+    visibility: visible;
+    top: 100%;
+    flex-direction: column;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
+    min-width: 100%;
+    background: #f7ba4440;
+  }
+  .hamburger {
+    display: none;
+  }
+}
