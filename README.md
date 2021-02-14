@@ -12,6 +12,14 @@
 
 ---
 
+## Github
+
+- [Esma Aydogdu ](https://github.com/esmaydogdu)
+
+- [Yılmaz Oğraş ](https://github.com/ograsyilmaz)
+
+---
+
 ## Ders Akışı
 
 - Sayfa basit şekilde düşünülerek tasarım aynısı yapı kod geçirelecek.
