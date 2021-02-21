@@ -66,53 +66,48 @@ body {
   background-image: url(./assets/icons/chevron_down.svg);
 }
 /*21 Feb Start*/
-
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .navigation-menu > ul > li > ul {
     position: absolute;
     top: 100%;
     display: flex;
     flex-direction: column;
     opacity: 0;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    visibility: hidden;
     min-width: 100%;
-    background: rgb(255, 239, 209);
+    background: #eee;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
     transition: 0.3s all ease;
   }
   .navigation-menu > ul > li > ul > li {
-    /*override ediyor, yukarısı düzeltilebilir*/
     padding: 8px;
   }
-  .navigation-menu > ul > li:hover > ul {
-    opacity: 100%;
-  }
-  .navigation-menu > ul > li > ul a {
+  .navigation-menu > ul > li > ul > li > a {
+    font-size: 0.8rem;
     color: #1f2e35;
-    font-size: 0.9rem;
+  }
+  .navigation-menu > ul > li:hover ul {
+    opacity: 100%;
+    visibility: visible;
   }
   .hamburger {
     display: none;
   }
-  /*buraya desktop hover vs prop ları gelecek*/
 }
-@media (max-width: 991px) {
-  /*bu override olacak, social links kısmını min-991px içine alabilirsin*/
+@media (max-width: 767px) {
   .social-links {
     display: none;
   }
-  /*sağ tarafa hamburger icon koyulacak, ona tıklandıgında açacagız nav menuyu
-  daha önceki yaklaşım gibi açılıp kapanmayı zamana bölmek için metrik değişiklikler kullanacağız
-  position gibi.*/
   .navigation-menu {
     position: absolute;
-    height: 100vh;
-    top: 100%;
     right: -300px;
+    top: 100%;
+    height: 100vh;
     width: 300px;
-    background: #30444e;
-    box-shadow: -4px 0px 15px 0px rgba(0, 0, 0, 0.25);
     padding: 10px;
-    transition: 0.2s all ease;
+    background: #30444e;
+    box-shadow: -4px 0px 10px 5px rgb(0 0 0 / 25%);
+    transition: 0.3s all ease;
   }
   .navigation-menu ul {
     flex-direction: column;
@@ -123,21 +118,21 @@ body {
     padding: 8px 16px;
   }
   .navigation-menu ul li a {
-    color: #fff;
+    width: 100%;
+    color: #fafafa;
   }
-  .navigation-menu ul li a:after {
+  .navigation-menu > ul > li.has-submenu > a:after {
     filter: brightness(0) invert(1);
   }
   .navigation-menu.show {
     right: 0;
   }
-  /*submenu için js ve sonrasında desktop submenusunu media query e alma*/
-  .navigation-menu > ul > li.has-submenu > ul {
+  .navigation-menu > ul > li > ul {
     display: none;
+    margin: 8px 0 16px;
   }
   .navigation-menu > ul > li.has-submenu.show > ul {
     display: flex;
-    margin: 10px 0 20px;
   }
 }
 /*nav menu end*/
