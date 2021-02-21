@@ -24,8 +24,8 @@ body {
 .header a img {
   max-width: 120px;
 }
-.header .social-links {
-  display: flex;
+.header .social-links a {
+  display: inline-block;
 }
 .header .social-links a:not(:last-child) {
   margin-right: 24px;
@@ -35,11 +35,18 @@ body {
   height: auto;
 }
 /*nav menu start*/
+.navigation-menu {
+  display: flex;
+  align-self: stretch;
+}
 .navigation-menu ul {
   display: flex;
   list-style: none;
 }
 .navigation-menu ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
   padding: 0 25px;
 }
 .navigation-menu ul a {
@@ -58,5 +65,79 @@ body {
   background-repeat: no-repeat;
   background-image: url(./assets/icons/chevron_down.svg);
 }
+/*21 Feb Start*/
 
+@media (min-width: 992px) {
+  .navigation-menu > ul > li > ul {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    min-width: 100%;
+    background: rgb(255, 239, 209);
+    transition: 0.3s all ease;
+  }
+  .navigation-menu > ul > li > ul > li {
+    /*override ediyor, yukarısı düzeltilebilir*/
+    padding: 8px;
+  }
+  .navigation-menu > ul > li:hover > ul {
+    opacity: 100%;
+  }
+  .navigation-menu > ul > li > ul a {
+    color: #1f2e35;
+    font-size: 0.9rem;
+  }
+  .hamburger {
+    display: none;
+  }
+  /*buraya desktop hover vs prop ları gelecek*/
+}
+@media (max-width: 991px) {
+  /*bu override olacak, social links kısmını min-991px içine alabilirsin*/
+  .social-links {
+    display: none;
+  }
+  /*sağ tarafa hamburger icon koyulacak, ona tıklandıgında açacagız nav menuyu
+  daha önceki yaklaşım gibi açılıp kapanmayı zamana bölmek için metrik değişiklikler kullanacağız
+  position gibi.*/
+  .navigation-menu {
+    position: absolute;
+    height: 100vh;
+    top: 100%;
+    right: -300px;
+    width: 300px;
+    background: #30444e;
+    box-shadow: -4px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    transition: 0.2s all ease;
+  }
+  .navigation-menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navigation-menu ul li {
+    flex-wrap: wrap;
+    padding: 8px 16px;
+  }
+  .navigation-menu ul li a {
+    color: #fff;
+  }
+  .navigation-menu ul li a:after {
+    filter: brightness(0) invert(1);
+  }
+  .navigation-menu.show {
+    right: 0;
+  }
+  /*submenu için js ve sonrasında desktop submenusunu media query e alma*/
+  .navigation-menu > ul > li.has-submenu > ul {
+    display: none;
+  }
+  .navigation-menu > ul > li.has-submenu.show > ul {
+    display: flex;
+    margin: 10px 0 20px;
+  }
+}
 /*nav menu end*/

@@ -34,3 +34,7 @@
 ## 14 Şubat
 
 - Tasarımın Header kısmını kod'a dökmek.
+
+## 21 Şubat
+
+-Header kısmını responsive ile birlikte tamamlamak
