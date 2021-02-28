@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+button {
+  border: none;
+  outline: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
@@ -16,6 +22,7 @@ body {
   width: 100%;
   padding: 0 15px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
 }
 .header a {
   display: flex;
@@ -66,7 +73,12 @@ body {
   background-image: url(./assets/icons/chevron_down.svg);
 }
 /*21 Feb Start*/
+
 @media (min-width: 768px) {
+  .header {
+    padding: 0 150px;
+  }
+
   .navigation-menu > ul > li > ul {
     position: absolute;
     top: 100%;
@@ -106,7 +118,6 @@ body {
     width: 300px;
     padding: 10px;
     background: #30444e;
-    box-shadow: -4px 0px 10px 5px rgb(0 0 0 / 25%);
     transition: 0.3s all ease;
   }
   .navigation-menu ul {
@@ -126,6 +137,7 @@ body {
   }
   .navigation-menu.show {
     right: 0;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   }
   .navigation-menu > ul > li > ul {
     display: none;
@@ -136,3 +148,46 @@ body {
   }
 }
 /*nav menu end*/
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  padding: 102px 50px 50px;
+}
+
+.main-content-info {
+  max-width: 545px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 44px 0; */
+  margin-right: 15px;
+}
+
+.main-content-info h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 133.69%;
+  color: #1f2e35;
+}
+
+.red-info {
+  color: #ee4248;
+}
+
+.main-content-info p {
+  font-size: 20px;
+  line-height: 29px;
+  color: #30444e;
+}
+
+.main-content-info-btn button {
+  background: #ee4248;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 12px 36px;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
