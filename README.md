@@ -38,3 +38,13 @@
 ## 21 Şubat
 
 -Header kısmını responsive ile birlikte tamamlamak
+
+## 28 Şubat
+
+-Banner kısmı responsive hariç tasarımı tamamlandı
+
+## 7 Mart
+
+-Geçen haftadan kalan kısımların responsive tasarımı + diğer anasayfa componentleri üzerinden devam etmek
+
+-
