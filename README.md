@@ -18,7 +18,10 @@
 
 - [Yılmaz Oğraş ](https://github.com/ograsyilmaz)
 
----
+
+- [Barlas Çinar ](https://github.com/barloa)
+
+
 
 ## Ders Akışı
 
