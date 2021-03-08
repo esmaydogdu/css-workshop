@@ -74,6 +74,7 @@ body {
 }
 /*21 Feb Start*/
 
+
 @media (min-width: 993px) {
   .header {
     padding: 0 50px;
@@ -106,6 +107,7 @@ body {
     display: none;
   }
 }
+
 
 @media (max-width: 992px) {
   .social-links {
@@ -162,6 +164,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+
   /* padding: 44px 0; */
   margin-right: 15px;
 }
@@ -249,3 +252,4 @@ body {
   font-size: 18px;
   line-height: 27px;
 }
+
