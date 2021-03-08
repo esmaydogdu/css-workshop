@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="page-content">
-      <div class="header">
-        <div class="logo-container">
-          <a href="/index.html">
-            <img src="assets/logo.svg" alt="logo" />
-          </a>
-        </div>
-        <div class="navigation-menu">
-          <ul>
-            <li class="nav-item"><a href="">Home</a></li>
-            <li class="nav-item"><a href="">Home</a></li>
-            <li class="nav-item dropdown">
-              <a href="">Home</a>
-              <ul>
-                <li><a href=""> Sub1</a></li>
-                <li><a href=""> Sub1</a></li>
-                <li><a href=""> Sub1</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"><a href="">Home</a></li>
-            <li class="nav-item"><a href=""></a>Home</li>
-          </ul>
-        </div>
-        <div class="social-links">
-          <a href=""><img src="/assets/icons/home.svg" alt="home-icon" /></a>
-          <a href=""><img src="/assets/icons/mail.svg" alt="mail-icon" /></a>
-          <a href=""
-            ><img src="/assets/icons/shuffle.svg" alt="shuffle-icon"
-          /></a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-content">
+    <div class="header">
+      <div class="logo-container">
+        <a href="/index.html">
+          <img src="assets/logo.svg" alt="" />
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <img src="assets/icons/hamburger-menu.svg" />
+      </div>
+      <div class="navigation-menu" id="navigation-menu">
+        <ul>
+          <li><a href="">Home </a></li>
+          <li><a href="">About</a></li>
+          <li class="has-submenu">
+            <a href="">home</a>
+            <ul>
+              <li><a href="">sub1</a></li>
+              <li><a href="">sub2</a></li>
+              <li><a href="">sub3</a></li>
+            </ul>
+          </li>
+          <li><a href="">home</a></li>
+          <li><a href="">home</a></li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <a href=""><img src="assets/icons/home.svg" alt="" /></a>
+        <a href=""><img src="assets/icons/mail.svg" alt="" /></a>
+        <a href=""><img src="assets/icons/shuffle.svg" alt="" /></a>
       </div>
     </div>
-  </body>
+    <div class="main-content">
+      <div class="main-content-info">
+        <h1>Making the most of the ever-growing</br><span class="red-info">Information Technology</span></h1>
+        <p>Managed by a team of professional experts with</br> extensive experience and impressive track records</p>
+        <div class="main-content-info-btn">
+          <button>Read More</button>
+        </div>
+      </div>
+      <div class="main-content-img">
+        <img src="./assets/pana.png" alt="">
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-img">
+        <img src="./assets/work.png" alt="">
+      </div>
+      <div class="section-info">
+        <h2>Welcome to <span class="red-info">Dwidasa Samsara Indonesia (DSI)</span></h2>
+        <p>Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by the founders, who each of them has a
+          common end objective to innovate new creations by making the most of the ever-growing information technology
+          through <span class="red-info">DSI</span>’s distinct front-end based application concept.</p>
+
+        <p>Managed by a team of professional experts with extensive experience and impressive track records, <span
+            class="red-info">DSI</span> believes
+          that continuous improvements and innovations assure your business to run effectively and efficiently.</p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>
