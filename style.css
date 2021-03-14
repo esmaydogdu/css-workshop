@@ -1,14 +1,18 @@
+:root {
+  --mobile-nav-menu-bg-color: #30444e;
+  --text-color: #30444e;
+  --section-dark-bg-color: #f6f6f6;
+  font-size: 16px;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 button {
   border: none;
   outline: none;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
@@ -73,91 +77,11 @@ body {
   background-image: url(./assets/icons/chevron_down.svg);
 }
 /*21 Feb Start*/
-
-
-@media (min-width: 993px) {
-  .header {
-    padding: 0 50px;
-  }
-
-  .navigation-menu > ul > li > ul {
-    position: absolute;
-    top: 100%;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-    visibility: hidden;
-    min-width: 100%;
-    background: #eee;
-    box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
-    transition: 0.3s all ease;
-  }
-  .navigation-menu > ul > li > ul > li {
-    padding: 8px;
-  }
-  .navigation-menu > ul > li > ul > li > a {
-    font-size: 0.8rem;
-    color: #1f2e35;
-  }
-  .navigation-menu > ul > li:hover ul {
-    opacity: 100%;
-    visibility: visible;
-  }
-  .hamburger {
-    display: none;
-  }
-}
-
-
-@media (max-width: 992px) {
-  .social-links {
-    display: none;
-  }
-  .navigation-menu {
-    position: absolute;
-    right: -300px;
-    top: 100%;
-    height: 100vh;
-    width: 300px;
-    padding: 10px;
-    background: #30444e;
-    transition: 0.3s all ease;
-  }
-  .navigation-menu ul {
-    flex-direction: column;
-    width: 100%;
-  }
-  .navigation-menu ul li {
-    flex-wrap: wrap;
-    padding: 8px 16px;
-  }
-  .navigation-menu ul li a {
-    width: 100%;
-    color: #fafafa;
-  }
-  .navigation-menu > ul > li.has-submenu > a:after {
-    filter: brightness(0) invert(1);
-  }
-  .navigation-menu.show {
-    right: 0;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-  }
-  .navigation-menu > ul > li > ul {
-    display: none;
-    margin: 8px 0 16px;
-  }
-  .navigation-menu > ul > li.has-submenu.show > ul {
-    display: flex;
-  }
-}
-/*nav menu end*/
-
 .main-content {
   display: flex;
   justify-content: center;
   padding: 102px 50px 50px;
 }
-
 .main-content-info {
   max-width: 545px;
   display: flex;
@@ -168,7 +92,6 @@ body {
   /* padding: 44px 0; */
   margin-right: 15px;
 }
-
 .main-content-info h1 {
   font-style: normal;
   font-weight: bold;
@@ -176,17 +99,14 @@ body {
   line-height: 133.69%;
   color: #1f2e35;
 }
-
 .red-info {
   color: #ee4248;
 }
-
 .main-content-info p {
   font-size: 20px;
   line-height: 29px;
   color: #30444e;
 }
-
 .main-content-info-btn button {
   background: #ee4248;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
@@ -196,45 +116,18 @@ body {
   line-height: 29px;
   color: #ffffff;
 }
-
-@media (max-width: 992px) {
-  .main-content {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 100px 20px 20px;
-  }
-
-  .main-content-img img {
-  max-width: 100%;
-  }
-
-  .main-content-info h1 {
-    font-size: 34px;
-    text-align: center;
-    padding-top: 30px;
-  }
-
-  .main-content-info p {
-    text-align: center;
-    padding-top: 16px;
-  }
-  
-  .main-content-info-btn {
-    padding-top: 16px;
-    text-align: center;
-  }
-}
-
 /* main-content end */
-
 .section {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
-  padding: 120px 50px 50px;
+  padding: 55px 50px 50px;
+  margin-top: 100px;
 }
-
+.section.dark {
+  background-color: var(--section-dark-bg-color);
+}
 .section-info {
   max-width: 520px;
   flex-direction: column;
@@ -242,14 +135,14 @@ body {
   justify-content: stretch;
   gap: 24px;
 }
-
 .section-info h2 {
   font-size: 32px;
   line-height: 42px;
+  font-weight: 500;
 }
-
 .section-info p {
   font-size: 18px;
   line-height: 27px;
+  font-weight: 400;
+  color: var(--text-color);
 }
-
