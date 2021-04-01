@@ -18,7 +18,12 @@
 
 - [Yılmaz Oğraş ](https://github.com/ograsyilmaz)
 
----
+
+- [Barlas Çinar ](https://github.com/barloa)
+
+- [Umut Akıncı ](https://github.com/umutakinc)
+
+
 
 ## Ders Akışı
 
@@ -34,3 +39,23 @@
 ## 14 Şubat
 
 - Tasarımın Header kısmını kod'a dökmek.
+
+## 21 Şubat
+
+-Header kısmını responsive ile birlikte tamamlamak
+
+## 28 Şubat
+
+-Banner kısmı responsive hariç tasarımı tamamlandı
+
+## 7 Mart
+
+-Geçen haftadan kalan kısımların responsive tasarımı + diğer anasayfa componentleri üzerinden devam etmek
+
+-
+
+## 27 Mart
+
+-Product and Service  masaüstü ve mobil tarafını halletik.
+
+
