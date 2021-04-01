@@ -12,6 +12,8 @@
 button {
   border: none;
   outline: none;
+  background: inherit;
+  color: inherit;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -151,8 +153,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 180px;
-  padding: 90px 50px 50px;
+  justify-content: center;
+  padding: 100px 10px;
 }
 .article h2{
   font-weight: 500;
@@ -161,19 +163,40 @@ body {
 }
 .article-info{
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-  max-width: 1083px;
-  margin-top: 47px;
 }
 .article-info-item{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  max-width: 350px;
+  min-width:320px;
+  flex: 1;
+  margin:50px 20px;
+  padding:10px 0px;
 }
 .article-info-item h3{
   color: #EE4248;
+  margin: 10px 0px;
 }
 .article-info-item img{
-  max-width: 100px;
+  height: 70px;
+  width: auto;
+}
+
+.article-info-item p{
+  color: #30444E;
+  margin: 15px 0px;
+  line-height: 27px;
+  font-size: 14px;
+}
+.article-info-item button{
+  display: inline-flex;
+  border-radius: 5px;
+  background: #ee4248;
+  color: #fff;
+  padding: 12px 16px;
 }
